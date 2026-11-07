@@ -1,0 +1,22 @@
+# dependencies & build output
+node_modules/
+dist/
+coverage/
+
+# secrets / per-owner config (see README §1)
+config.local.json
+extension-key.pem
+*.pem
+.env*
+
+# packed / shared builds ("Pack extension" output, zips)
+*.crx
+*.zip
+
+# logs & OS/editor clutter
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
