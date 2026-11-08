@@ -65,6 +65,11 @@ but keep `extension-key.pem` private anyway: it proves which extension is "yours
      intended to be a non-sensitive scope, which shouldn't require Google verification. Family
      members may still see an "unverified app" notice, which they can accept via *Advanced → Go to
      Bookmark Sync*.
+     Publishing requires a public home page and privacy policy on a domain you've verified.
+     Ready-to-host drafts and a field-by-field guide are in
+     [docs/oauth-production.md](docs/oauth-production.md).
+     **Until then, Testing mode works:** add every user under *Test users*, and expect a
+     "Sign in to Google again" prompt about once a week per browser.
 4. **Credentials → Create credentials → OAuth client ID**:
    * Application type **Web application**.
    * **Authorized redirect URIs:** `https://<extension-id>.chromiumapp.org/` (printed by

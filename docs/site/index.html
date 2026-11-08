@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Search Console verification: paste the meta tag Search Console gives you here, e.g.
+  <meta name="google-site-verification" content="..."> -->
+  <title>Bookmark Sync</title>
+  <meta name="description" content="A private browser extension that keeps bookmarks in sync across your Chromium browsers, end-to-end encrypted in your own Google Drive.">
+  <style>
+    :root { --bg:#fff; --text:#1a1b1f; --muted:#5d6270; --card:#f5f6f8; color-scheme: light dark; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#131417; --text:#eceef2; --muted:#a3a9b5; --card:#1c1e22; } }
+    body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+    h1 { font-size: 32px; margin: 0 0 8px; } h2 { font-size: 19px; margin: 32px 0 8px; }
+    .lead { font-size: 18px; color: var(--muted); } a { color: #2563eb; }
+    .card { background: var(--card); border-radius: 10px; padding: 14px 18px; }
+    footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Bookmark Sync</h1>
+  <p class="lead">A private browser extension that keeps your bookmarks in sync across your
+  Chromium-based browsers — Chrome, Edge, Brave and Vivaldi — on Windows, macOS and Linux.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Add, rename, move or delete a bookmark on one computer and it appears the same way on your others.</li>
+    <li>Works across different browsers, not just one vendor's account sync.</li>
+    <li>Combines bookmarks safely when several computers change things at the same time, and asks before applying large deletions.</li>
+    <li>Keeps daily snapshots you can restore, and lets you export bookmarks as a standard file any browser can import.</li>
+  </ul>
+
+  <h2>How your data is handled</h2>
+  <div class="card">
+    <p>Bookmarks are <strong>encrypted on your computer</strong> with a passphrase only you know,
+    then stored in a hidden app folder in <strong>your own Google Drive</strong>. The extension
+    asks Google only for access to that app folder (<code>drive.appdata</code>) — it cannot see
+    your other Drive files. There are no developer servers, no analytics and no tracking.</p>
+  </div>
+
+  <h2>Why it asks for Google sign-in</h2>
+  <p>Google Drive is used purely as encrypted storage so your computers can exchange bookmark
+  changes. Sign-in grants the extension permission to manage its own hidden data folder in your
+  Drive; you can revoke this at any time at
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+  <h2>Availability</h2>
+  <p>Bookmark Sync is a personal, non-commercial project used by its developer and family. It is
+  not distributed through any extension store.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> ·
+    Contact: [CONTACT EMAIL]
+  </footer>
+</main>
+</body>
+</html>

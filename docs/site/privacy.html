@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bookmark Sync — Privacy Policy</title>
+  <style>
+    :root { --bg:#fff; --text:#1a1b1f; --muted:#5d6270; --line:#e3e5ea; color-scheme: light dark; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#131417; --text:#eceef2; --muted:#a3a9b5; --line:#2d3138; } }
+    body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+    h1 { font-size: 28px; margin: 0 0 4px; } h2 { font-size: 19px; margin: 32px 0 8px; }
+    .muted { color: var(--muted); } a { color: #2563eb; }
+    table { border-collapse: collapse; width: 100%; font-size: 15px; } td, th { border-bottom: 1px solid var(--line); padding: 8px 6px; text-align: left; vertical-align: top; }
+  </style>
+</head>
+<body>
+<main>
+  <p><a href="./">← Bookmark Sync</a></p>
+  <h1>Privacy Policy</h1>
+  <p class="muted">Effective date: [DATE] · Contact: [CONTACT EMAIL]</p>
+
+  <p>Bookmark Sync is a browser extension that keeps your bookmarks in sync across your own
+  Chromium-based browsers (Chrome, Edge, Brave, Vivaldi). It is a private, non-commercial project
+  maintained by [YOUR NAME] for personal and family use. This policy explains what data the
+  extension handles and where it goes.</p>
+
+  <h2>Summary</h2>
+  <ul>
+    <li>Your bookmarks are <strong>encrypted on your computer</strong> before they are stored in your own Google Drive.</li>
+    <li>The developer runs <strong>no servers</strong> and receives <strong>no data</strong> from you — no bookmarks, no account details, no analytics.</li>
+    <li>The extension can only access a hidden app-specific folder in your Google Drive, not your other files.</li>
+  </ul>
+
+  <h2>Data the extension accesses</h2>
+  <table>
+    <tr><th>Data</th><th>Why</th><th>Where it is stored</th></tr>
+    <tr><td>Your browser bookmarks (titles, URLs, folder structure, date added)</td><td>To sync them between your browsers</td><td>In your browser, and encrypted in your Google Drive app-data folder</td></tr>
+    <tr><td>Google account email address</td><td>Shown in the extension's settings so you know which account is connected, and used as a sign-in hint</td><td>Only in your browser's extension storage</td></tr>
+    <tr><td>Google OAuth access token</td><td>To read and write the extension's own files in your Google Drive</td><td>In browser memory only (cleared when the browser closes)</td></tr>
+    <tr><td>A device name and browser type (e.g. "Chrome on Windows")</td><td>To list your synced devices</td><td>Encrypted in your Google Drive app-data folder</td></tr>
+  </table>
+
+  <h2>Google user data</h2>
+  <p>The extension requests a single Google permission:
+  <code>https://www.googleapis.com/auth/drive.appdata</code> ("See, create, and delete its own
+  configuration data in your Google Drive"). It uses this permission only to store, read, update
+  and delete its own encrypted sync files in the hidden application data folder of the signed-in
+  user's Google Drive. It cannot see, open or change any other file in your Drive.</p>
+  <p>Before anything is uploaded, it is encrypted on your device with AES-256-GCM using a key
+  derived from a passphrase that only you know. Google and the developer cannot read the contents.
+  The passphrase is never stored or transmitted.</p>
+  <p>Bookmark Sync's use and transfer of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the Limited Use requirements. Specifically, Google user data is:</p>
+  <ul>
+    <li>used only to provide the bookmark-sync feature you see in the extension;</li>
+    <li>not transferred to anyone, except as necessary to provide that feature (to Google Drive itself), to comply with law, or with your explicit consent;</li>
+    <li>not used for advertising, profiling, credit decisions or any other purpose;</li>
+    <li>not read by any human.</li>
+  </ul>
+
+  <h2>Data sharing</h2>
+  <p>No data is sold, shared or sent to the developer or to third parties. The only network
+  services contacted are Google's sign-in and Google Drive APIs (<code>accounts.google.com</code>,
+  <code>oauth2.googleapis.com</code>, <code>www.googleapis.com</code>). The extension contains no
+  analytics, tracking, advertising or remote code.</p>
+
+  <h2>Data retention and deletion</h2>
+  <ul>
+    <li>Encrypted sync files remain in your Google Drive until you delete them. Daily encrypted snapshots are kept for up to one year and then deleted automatically.</li>
+    <li>Delete everything at any time from the extension (<em>Options → Security &amp; data → Remove all synced data</em>), or in Google Drive under <em>Settings → Manage apps → Bookmark Sync → Delete hidden app data</em>.</li>
+    <li>Revoke access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li>Uninstalling the extension removes its local data from that browser. Your bookmarks themselves are never deleted by uninstalling.</li>
+  </ul>
+
+  <h2>Security</h2>
+  <p>Data is encrypted end-to-end (AES-256-GCM, PBKDF2-SHA256 key derivation with 600,000
+  iterations); the encryption key is kept on your device as a non-exportable key. All network
+  traffic uses HTTPS. The extension's activity log records counts only, never bookmark titles or
+  URLs.</p>
+
+  <h2>Children</h2>
+  <p>The extension is not directed at children under 13 and does not knowingly collect their data.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the updated version will be posted on this page with a new effective date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions or requests: [CONTACT EMAIL]</p>
+</main>
+</body>
+</html>
